@@ -12,14 +12,14 @@ astunparse==1.6.3
 async-lru==2.0.3
 async-timeout==4.0.2
 attrs==23.1.0
-awscli @ file:///Users/kirstenhunter/src/bedrock-python-sdk/awscli-1.29.21-py3-none-any.whl#sha256=359bb5da1692c7085e7eed3ce752670339f6beb211dd76bc51c6e75bb549410d
+awscli @ file:///content/awscli-1.29.21-py3-none-any.whl#sha256=359bb5da1692c7085e7eed3ce752670339f6beb211dd76bc51c6e75bb549410d
 Babel==2.12.1
 backcall==0.2.0
 backoff==2.2.1
 beautifulsoup4==4.12.2
 bleach==6.0.0
-boto3 @ file:///Users/kirstenhunter/src/bedrock-python-sdk/boto3-1.28.21-py3-none-any.whl#sha256=fd7ac97960fb52106759c6a072ffcda8d106c9f75e7d8301fe1867048369b56e
-botocore @ file:///Users/kirstenhunter/src/bedrock-python-sdk/botocore-1.31.21-py3-none-any.whl#sha256=96bc05a853e9bc4a385c50cf8733997ebd716ce56cc94c0b3585a26781423f66
+boto3 @ file:///content/bedrock-python-sdk/boto3-1.28.21-py3-none-any.whl#sha256=fd7ac97960fb52106759c6a072ffcda8d106c9f75e7d8301fe1867048369b56e
+botocore @ file:///content/bedrock-python-sdk/botocore-1.31.21-py3-none-any.whl#sha256=96bc05a853e9bc4a385c50cf8733997ebd716ce56cc94c0b3585a26781423f66
 cachetools==5.3.1
 cassandra-driver==3.28.0
 cassio==0.1.1
