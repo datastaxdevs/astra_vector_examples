@@ -1,8 +1,8 @@
-# You need to perform these commands first
+# You need to perform these commands first in the top directory of the repository
 # curl https://d2eo22ngex1n9g.cloudfront.net/Documentation/SDK/bedrock-python-sdk.zip --output bedrock-python-sdk.zip
 # unzip -o bedrock-python-sdk.zip
 # pip install -r requirements_bedrock.txt
-# pip install dotenv *.whl
+# pip install *.whl
 # mkdir texts
 # curl https://raw.githubusercontent.com/synedra/astra_vector_examples/main/romeo_astra.json --output texts/romeo_astra.json
 
@@ -69,7 +69,8 @@ for index in range(len(quote_array)):
 
 # Enter a question about Romeo and Astra (Like 'How did Astra die?')
 QUESTION_FOR_MODEL = "How did Astra Die?"
-generation_prompt_template = f"""Please answer a question from a user.
+
+generation_prompt_template = """Please answer a question from a user.
       Create a summary of the information between ## to answer the question.
       Your task is to answer the question using only the summary using 20 words
 
@@ -96,11 +97,6 @@ llm_prompt = generation_prompt_template.format(
     question=QUESTION_FOR_MODEL,
     context=context,
 )
-
-body = json.dumps({"inputText": llm_prompt})
-modelId = "amazon.titan-tg1-large"
-accept = "application/json"
-contentType = "application/json"
 
 body = json.dumps({"inputText": llm_prompt})
 modelId = "amazon.titan-tg1-large"
